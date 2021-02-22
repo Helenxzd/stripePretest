@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stripe Metamers Pretest</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	</style>
+</head>
+<body>
+
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"001.png",
+				"002.png",
+				"003.png",
+				"004.png",
+				"005.png",
+				"006.png",
+				"007.png",
+				"008.png",
+				"009.png",
+				"010.png",
+				"011.png",
+				"012.png"
+			)
+		//--><!]]>
+	</script>
+</div>
+
+<div class="toppin">
+
+	<h1>Test Metamers <span id="curnum">0</span>/50
+
+	<select id="duration">
+	  <option value="200">200ms</option>
+	  <option value="500">500ms</option>
+	  <option value="1000">1000ms</option>
+	</select>
+
+	<!-- input type="number" placeholder="input texture duration" id="duration" name="duration" min="200" step="100"><span id="ms">ms  </span> -->
+
+	<select id="select">
+	  <option value="2">2 straps</option>
+	  <option value="4">4 straps</option>
+	  <option value="8">8 straps</option>
+	</select>
+
+	</h1>
+
+	<div class="instruction">This is a pretest for later tests to get you familiar with the test interface. Once you finished, go to <a href="https://helenxzd.github.io/StripeTest/">Stripe Test Site</a> and start test!</div>
+	<div class="instruction">Use ArrowDown to show the metamers, use ArrowLeft/ArrowRight or click the bottom buttons to make choices! The initial duration will be 200ms</div>
+	<div class="instruction">The viewing distance should be 5.8 times the size of texture. For example, the side length of texture showing on your computer is 10cm, then your viewing distance should be 58cm.</div>
+	<button class="button" id="next" onclick="nextImage()">Next Image</button>
+
+</div>
+
+<div class="result" id="result"></div>
+
+
+<div class="imageShow" id="imageShow">
+
+	<img class="metamers" 
+	 id="metamers">
+
+</div>
+
+<div class="footButtons">
+	<button class="button" id="vertical" onclick="checkCorrect(this.id)">vertical</button>
+	<button class="button" id="horizontal" onclick="checkCorrect(this.id)">horizontal</button>
+</div>
+
+<script type="text/javascript" src="index.js"></script>
+
+
+</body>
+</html>
