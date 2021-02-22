@@ -1,6 +1,6 @@
 var count = 0;
 var duration = 200;
-var two_strap = [1, 2, 7, 8]
+var two_strap = [1, 2]
 var four_strap = [3, 4, 9, 10]
 var eight_strap = [5, 6, 11, 12]
 
@@ -91,7 +91,7 @@ function nextImage() {
 		document.getElementById("horizontal").setAttribute("class",classVal);
 
 
-		var rand = Math.floor(Math.random() * 4);
+		var rand = Math.floor(Math.random() * 2);
 		var img = document.getElementById("metamers");
 		duration = Number(document.getElementById("duration").value);
 		console.log(duration)
@@ -121,7 +121,7 @@ function nextImage() {
 		}
 
 
-		var rand = Math.floor(Math.random() * 4);
+		var rand = Math.floor(Math.random() * 2);
 		var img = document.getElementById("metamers");
 		duration = Number(document.getElementById("duration").value);
 		console.log(duration)
@@ -164,7 +164,7 @@ function checkCorrect(checkedId) {
 		var src = img.src.slice(srcIndex+1);
 
 		if (checkedId == "vertical") {
-			if (src == "007.png" || src == "008.png" || src == "009.png" || src == "010.png" || src == "011.png" || src == "012.png") {
+			if (src == "002.png" || src == "008.png" || src == "009.png" || src == "010.png" || src == "011.png" || src == "012.png") {
 				button.classList.add("button_onclick_right");
 			}
 			else {
@@ -172,7 +172,7 @@ function checkCorrect(checkedId) {
 			}
 		}
 		else if (checkedId == "horizontal") {
-			if (src == "001.png" || src == "002.png" || src == "003.png" || src == "004.png" || src == "005.png" || src == "006.png") {
+			if (src == "001.png" || src == "003.png" || src == "004.png" || src == "005.png" || src == "006.png") {
 				button.classList.add("button_onclick_right");
 			}
 			else {
