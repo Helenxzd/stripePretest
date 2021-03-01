@@ -91,7 +91,7 @@ function nextImage() {
 		document.getElementById("horizontal").setAttribute("class",classVal);
 
 
-		var rand = Math.ceil(Math.random() * 10);
+		var rand = Math.floor(Math.random() * 10);
 		var img = document.getElementById("metamers");
 		duration = Number(document.getElementById("duration").value);
 		console.log(duration)
@@ -121,7 +121,7 @@ function nextImage() {
 		}
 
 
-		var rand = Math.ceil(Math.random() * 2);
+		var rand = Math.floor(Math.random() * 10);
 		var img = document.getElementById("metamers");
 		duration = Number(document.getElementById("duration").value);
 		console.log(duration)
