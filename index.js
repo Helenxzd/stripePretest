@@ -60,7 +60,7 @@ function nextImage() {
 		result.innerText = result.innerText + src + ' ' + choiceId + ' ';
 		var curnum = document.getElementById("curnum");
 		curnum.innerText = count;
-		if (count >= 10) {
+		if (count > 10) {
 			var text = document.getElementById('result').innerText + ' stripe Number: ' + numberOfStraps+ ' duration: ' + duration;
 			var nextstage = document.getElementById('nextstage')
 			console.log(nextstage)
