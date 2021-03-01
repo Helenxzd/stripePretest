@@ -60,10 +60,13 @@ function nextImage() {
 		result.innerText = result.innerText + src + ' ' + choiceId + ' ';
 		var curnum = document.getElementById("curnum");
 		curnum.innerText = count;
-		if (count == 51) {
+		if (count >= 10) {
 			var text = document.getElementById('result').innerText + ' stripe Number: ' + numberOfStraps+ ' duration: ' + duration;
-			download("result.txt",text); 
+			var nextstage = document.getElementById('nextstage')
+			console.log(nextstage)
+			nextstage.style.display = "block"
 		}
+		console.log(count)
 
 		clearTimeout(param);
 		isChecked = false;
@@ -94,13 +97,13 @@ function nextImage() {
 		var rand = Math.floor(Math.random() * 10);
 		var img = document.getElementById("metamers");
 		duration = Number(document.getElementById("duration").value);
-		console.log(duration)
+	
 		img.style.display = "";
 		var img_str = `${imgArr[rand]}`
 		var img_str = img_str.padStart(3, '0')
 		img.src = img_str+'.png'
 		param = setTimeout("document.getElementById('metamers').style.display='none'",duration);
-		console.log(param)
+	
 
 	}
 
@@ -124,13 +127,13 @@ function nextImage() {
 		var rand = Math.floor(Math.random() * 10);
 		var img = document.getElementById("metamers");
 		duration = Number(document.getElementById("duration").value);
-		console.log(duration)
+		
 		img.style.display = "";
 		var img_str = `${imgArr[rand]}`
 		var img_str = img_str.padStart(3, '0')
 		img.src = img_str+'.png'
 		param = setTimeout("document.getElementById('metamers').style.display='none'",duration);
-		console.log(param)
+		
 
 	}
 
