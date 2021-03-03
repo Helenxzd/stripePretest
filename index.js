@@ -63,7 +63,6 @@ function nextImage() {
 		if (count > 10) {
 			var text = document.getElementById('result').innerText + ' stripe Number: ' + numberOfStraps+ ' duration: ' + duration;
 			var nextstage = document.getElementById('nextstage')
-			console.log(nextstage)
 			nextstage.style.display = "block"
 		}
 		console.log(count)
