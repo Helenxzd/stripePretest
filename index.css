@@ -18,6 +18,10 @@
 	display: none;
 }
 
+.hidden {
+	display: none;
+}
+
 .result {
 	display: none;
 	visibility: none;
